@@ -1,0 +1,80 @@
+Proceso CodigoReto //palabra clave para empezar la estructura general del algoritmo. 
+
+Definir codigo, unidades, precio, menu, precioF Como real;// se definen las variables según el tipo de datos, en este caso todas serán de tipo real. 
+precio<-0; //de inicializa la variable en cero 
+menu<-1; //variable predefinida con valor 1
+precioF<-0;//se inicializa la variable en cero 
+
+Escribir "Bienvenido a la tienda de artículos de ropa" ; //se imprime un mensaje de bienvenida al usuario
+
+Mientras menu=1 hacer//estructura repetitiva While
+Escribir " //mientras se cumpla la condición se imprime mensaje 
+Cod      prenda
+123      pantalón hombre 
+345     camisa manga corta 
+456    Camiseta Polo
+567     Camiseta cuello redondo 
+789     Medias tobilleras ";
+
+
+    Escribir "Digite Codigo de la prenda:"; //se imprime mensaje en pantalla pidiendo digitar código 
+   Leer codigo;// se guarda en variable Leer
+
+   Si codigo=123 entonces//estructura o sentencia condicional simple If
+   Escribir "Hermoso Pantalón de hombre a tan sólo $45000 pesos" ;//si se cumple la condición se imprime un mensaje 
+   Escribir "Cuántas unidades desea comprar";//se pide un dato a usuario 
+     Leer unidades;// se guarda en variable Unidades 
+precio<-(unidades*45000) ;//construcción de una expresión aritmética respetando la prioridad de los operadores
+   Escribir "El precio total de los pantalones es: $", precio, "pesos" ;//se imprime en pantalla el resultado de la operación aritmética
+precioF<-precioF+precio;//suma iterativa a la variable Precio Final 
+Escribir "desea comprar más artículos? Presione 1 Para seguir comprando o Enter Para finalizar compra" ;//se imprime un mensaje en pantalla si se desea continuar o terminar de comprar 
+Leer menu;//se guarda en variable menú que condiciona el ciclo while 
+   Finsi//finaliza estructura o sentencia condicional simple if
+
+Si codigo=345 entonces
+   Escribir "camisa manga corta de hombre Unidad a $35.000" ;
+   Escribir "Cuántas unidades desea comprar";
+     Leer unidades;
+precio<-(unidades*35000) ;
+   Escribir "El precio total de las camisas es:", precio;
+precioF<-precioF+precio;
+Escribir "desea comprar más artículos? Presione 1. Para seguir comprando o Enter Para finalizar compra" ;
+Leer menu;
+   Finsi
+
+Si codigo=456 entonces
+   Escribir "camiseta Polo Unidad a $27.000" ;
+   Escribir "Cuántas unidades desea comprar";
+     Leer unidades;
+precio<-(unidades*27000) ;
+   Escribir "El precio total de las camisetas es:", precio;
+precioF<-precioF+precio;
+Escribir "desea comprar más artículos? Presione 1. Para seguir comprando o Enter Para finalizar compra" ;
+Leer menu;
+   Finsi
+
+Si codigo=567 entonces
+   Escribir "camisetas Cuello redondo Unidad a $12.000 " ;
+   Escribir "Cuántas unidades desea comprar";
+     Leer unidades;
+precio<-(unidades*12000) ;
+   Escribir "El precio total de las camisetas cuello redondo es:", precio;
+precioF<-precioF+precio;
+Escribir "desea comprar más artículos? Presione 1. Para seguir comprando o Enter Para finalizar compra" ;
+Leer menu;
+   Finsi
+
+Si codigo=789 entonces
+   Escribir "medias tobilleras Unidad a $3.000" ;
+   Escribir "Cuántas unidades desea comprar";
+     Leer unidades;
+precio<-(unidades*3000) ;
+   Escribir "El precio total de las medias es:  $", precio;
+precioF<-precioF+precio;
+Escribir "desea comprar más artículos? Presione 1. Para seguir comprando o Enter Para finalizar compra" ;
+Leer menu;
+   Finsi
+Finmientras //finaliza estructura repetitiva while 
+
+Escribir "el precio total a pagar de la compra es: $ ", precioF, " pesos";//se imprime un mensaje en pantalla mostrando el precio final
+FinProceso//finaliza algoritmo
